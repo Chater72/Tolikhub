@@ -1,5 +1,6 @@
 local screenGui = Instance.new("ScreenGui")
-screenGui.Name = "Tolikhub"
+screenGui.Name = "Tolik hub"
+screenGui.ResetOnSpawn = false
 screenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
 local mainFrame = Instance.new("Frame")
@@ -252,3 +253,9 @@ end)
 
 -- Показываем первую вкладку по умолчанию
 switchTab("Информация")
+
+game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "Tolik Hub activated";
+    Text = "Script created by: t.me/tolik_scripter";
+    Duration = 5
+})
